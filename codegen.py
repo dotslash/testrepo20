@@ -1,7 +1,6 @@
 import sys
 from pathlib import Path
 import uuid
-nfiles = int(sys.argv[1])
 
 def make_file_content(fname):
   ret = [fname]
@@ -11,9 +10,11 @@ def make_file_content(fname):
       ret.append(rand_str())
   return '\n'.join(ret) + '\n'
 
-for i in range(nfiles):
-  # 123 => 1/2/3.txt
-  fname = '/'.join(list(str(i))) + ".txt"
-  p = Path(fname)
-  p.parent.mkdir(exist_ok=True)
-  p.write_text(make_file_content(fname))
+if __name__ == '__main__':
+  nfiles = int(sys.argv[1])
+  for i in range(nfiles):
+    # 123 => 1/2/3.txt
+    fname = '/'.join(list(str(i))) + ".txt"
+    p = Path(fname)
+    p.parent.mkdir(exist_ok=True)
+    p.write_text(make_file_content(fname))
