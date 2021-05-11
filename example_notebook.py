@@ -1,20 +1,29 @@
 # Databricks notebook source
-1+1
+print(func_from_another_notebook()) 
 
 # COMMAND ----------
 
-def myfunc1():
-  return "myfunc1"
+# DBTITLE 1,%run works (from the sidebar we can see another_notebook exists)
+# MAGIC %run ./another_notebook
 
 # COMMAND ----------
 
-myfunc1()
+print(func_from_another_notebook()) 
 
 # COMMAND ----------
 
-def myfunc1():
-  return "myfunc1v2"
+# DBTITLE 1,another_notebook does not show up in the list when files is enabled
+# MAGIC %sh
+# MAGIC ls .
 
 # COMMAND ----------
 
-myfunc1()
+# MAGIC %sh cat foof
+
+# COMMAND ----------
+
+# MAGIC %sh cat foof
+
+# COMMAND ----------
+
+# MAGIC %sh cat foof
