@@ -1,13 +1,6 @@
 # Databricks notebook source
 # COMMAND ----------
-"""
-695017b7fe004e2692da52211cf26a5b
-8e9ec327f3c14214b92ecab0bff623a4
-9388059525934e07bb0c21aaaeeca2d9
-7d15136f100548c0b992c56f1a308421
-38fb73eee49848bfaa0533dd5b787227
-8ffc43952901431db0552e2f07fd1d20
-"""
+nb0=1
 # COMMAND ----------
 """
 0ad2e36fab6c43df8ed9e9d3dc4c115a
