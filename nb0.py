@@ -1,3 +1,4 @@
 # Databricks notebook source
 # COMMAND ----------
-nb1=1
+print("inner")
+nb2=1
