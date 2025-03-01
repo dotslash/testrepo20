@@ -3,4 +3,4 @@
 
 # COMMAND ----------
 
-print(nb1)
+print(nb2)
